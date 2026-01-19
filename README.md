@@ -1,53 +1,43 @@
-# Aluci's Open Source Project Template
+# Aluci Labellization Criteria
 
-## Overview
+This document defines the standards required for a project to receive the **Aluci** label. Our criteria focus on transparency, technical justification, and human-centric design.
 
-This repository provides a reusable template for creating open source projects that follow Aluci's engineering and documentation standards. It is intended for developers who want to quickly set up a new project with a consistent structure and best practices.
+## 1. Open Source & Licensing
 
-## README Template
+To ensure accessibility and collaboration, the project must meet these legal standards:
 
-You can use the following as a starting point for your project's README file. Make sure to fill in the placeholders with relevant information about your project.
+- **Approved License**: The project must use an OSI-approved license. Aluci’s recommended baseline is the **Apache-2.0 License**.
+- **License Visibility**: A `LICENSE` file must be clearly present in the root directory.
 
-```markdown
-# Name of the project
+## 2. Technical Excellence & Justification
 
-In case of early development, please include a warning:
+We value intentional engineering over "vibe coding" (unstructured, trial-and-error development):
 
-> [!WARNING]
-> This project is in early development and is not yet ready for production use.
+**Justified Tech Stack**: Any programming language or framework is authorized, provided the choice is justified. For instance, using web technologies for a desktop app is acceptable if cross-platform compatibility (web, mobile, desktop) is a core requirement of the project.
+- **Architecture Integrity**: The project must demonstrate a clear structure and logical organization rather than a collection of unmanaged snippets.
+- **Dependency Management**: Projects should use robust tools for environment and package management *(e.g., Poetry for Python, Cargo for Rust, Make or CMake for C/C++, Gradle for JVM)*.
+- **Automated Setup**: We favor projects that provide scripts to automate environment creation *(e.g., `setup.sh` for virtual environments (Venv or Miniconda), installation of necessary tools)*.
 
-## Overview
+## 3. Documentation & Setup Standards
 
-This project is [brief description]. Its goal is to [main goal or functionality].
+A project must be easy to audit and install for other developers:
 
-## Setup
+- **README Standard**: Every project must include a `README.md` with an Overview, Setup instructions, and Usage examples.
+- **Status Transparency**: Projects in early development must include a prominent warning stating they are not yet ready for production use.
+- **Clear Requirements**: All hardware and software requirements must be explicitly listed.
 
-### Requirements
+## 4. AI Usage Transparency
 
-If there are any requirements, please list them here.
+Transparency regarding generative AI is a non-negotiable pillar of the Aluci hub:
 
-### Recommended Setup
+- **Mandatory Disclosure**: Any use of AI tools *(e.g., ChatGPT, GitHub Copilot)* during development must be documented.
+- **AI Usage File**: Projects must include an `AI_USAGE.md` file based on the Aluci template to detail where and how AI was utilized.
+- **Human Validation**: Contributors must confirm that all AI-generated code has been reviewed, tested, and validated by a human to ensure security and reliability.
 
-Always include a recommended setup section, even if it's just a single command.
+## 5. Ethical & Human-Centric Design
 
-## Usage
-
-Always include a usage section, even if it's just a single command.
-
-## License
-
-This project is licensed under the Apache License (Version 2.0).
-
-See the [LICENSE](LICENSE) file for details.
-
-## AI Usage Transparency
-
-This project uses AI tools such as ChatGPT to assist with development.
-For more details, see the [AI Usage Disclosure](AI_USAGE.md) file.
-```
-
-## License
-
-This project is licensed under the Apache License (Version 2.0).
-
-See the [LICENSE](LICENSE) file for details.
+- **Data Privacy**: The project must prioritize user privacy and avoid unnecessary data collection.
+- **Resource Efficiency**: We encourage techniques that optimize performance to reduce resource consumption (e.g., CPU, RAM, GPU, energy hardware). For example, use: 
+  - Small Language Models (SLMs) instead of general-purpose LLMs when appropriate
+  - Efficient algorithms *(e.g., Binary search, quick sort)*
+  - Adequate data structure *(e.g., Tree)*

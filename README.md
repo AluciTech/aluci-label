@@ -1,6 +1,6 @@
-# Aluci Labellization Criteria
+# Aluci's Labeling Criteria
 
-This document defines the standards required for a project to receive the **Aluci** label. Our criteria focus on transparency, technical justification, and human-centric design.
+This document defines the standards required for a project to receive **Aluci**'s label. Our criteria focus on transparency, technical justification, and human-centric design.
 
 ## 1. Open Source & Licensing
 
@@ -14,6 +14,7 @@ To ensure accessibility and collaboration, the project must meet these legal sta
 We value intentional engineering over "vibe coding" (unstructured, trial-and-error development):
 
 **Justified Tech Stack**: Any programming language or framework is authorized, provided the choice is justified. For instance, using web technologies for a desktop app is acceptable if cross-platform compatibility (web, mobile, desktop) is a core requirement of the project.
+
 - **Architecture Integrity**: The project must demonstrate a clear structure and logical organization rather than a collection of unmanaged snippets.
 - **Dependency Management**: Projects should use robust tools for environment and package management *(e.g., Poetry for Python, Cargo for Rust, Make or CMake for C/C++, Gradle for JVM)*.
 - **Automated Setup**: We favor projects that provide scripts to automate environment creation *(e.g., `setup.sh` for virtual environments (Venv or Miniconda), installation of necessary tools)*.
@@ -41,3 +42,13 @@ Transparency regarding generative AI is a non-negotiable pillar of the Aluci hub
   - Small Language Models (SLMs) instead of general-purpose LLMs when appropriate
   - Efficient algorithms *(e.g., Binary search, quick sort)*
   - Adequate data structure *(e.g., Tree)*
+
+## 6. Review & Approval Process
+
+Projects seeking Aluci's label will undergo a review process by the Aluci labeling committee to ensure compliance with these criteria. Approval will be granted based on adherence to the outlined standards. Once approved, the project will receive the Aluci label and be featured in the Aluci hub.
+
+## Conclusion
+
+Aluci's label is designed to uphold high standards in open-source projects, and is still evolving. We welcome feedback and suggestions from the community to refine these criteria further.
+
+We look forward to reviewing your projects for Aluci labeling!

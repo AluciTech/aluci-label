@@ -1,4 +1,12 @@
+<center>
+
 # Aluci Label
+
+[![GitHub License](https://img.shields.io/github/license/AluciTech/aluci-label)](LICENSE)
+![Laabel Requests](https://img.shields.io/github/issues-search/AluciTech/aluci-label?query=label%3Alabel-request&label=Label%20Requests)
+
+
+</center>
 
 **Aluci's label** certifies open-source projects that meet high standards in transparency, technical excellence, and human-centric design. Labeled projects are featured on the Aluci hub.
 
@@ -15,14 +23,14 @@ Requesting the Aluci label for your project is straightforward:
 
 Our labeling criteria cover six key areas:
 
-| # | Area | What We Look For |
-|---|------|-----------------|
-| 1 | **Open Source & Licensing** | OSI-approved license, visible `LICENSE` file |
-| 2 | **Technical Excellence** | Justified tech stack, clean architecture, dependency management |
-| 3 | **Documentation** | Clear README with overview, setup, and usage instructions |
-| 4 | **AI Transparency** | Mandatory disclosure of AI tool usage via `AI_USAGE.md` |
-| 5 | **Ethical Design** | User privacy, resource efficiency, responsible AI |
-| 6 | **Review Process** | Committee evaluation against all criteria |
+| #   | Area                        | What We Look For                                                |
+| --- | --------------------------- | --------------------------------------------------------------- |
+| 1   | **Open Source & Licensing** | OSI-approved license, visible `LICENSE` file                    |
+| 2   | **Technical Excellence**    | Justified tech stack, clean architecture, dependency management |
+| 3   | **Documentation**           | Clear README with overview, setup, and usage instructions       |
+| 4   | **AI Transparency**         | Mandatory disclosure of AI tool usage via `AI_USAGE.md`         |
+| 5   | **Ethical Design**          | User privacy, resource efficiency, responsible AI               |
+| 6   | **Review Process**          | Committee evaluation against all criteria                       |
 
 For the full details, see [**CRITERIA.md**](CRITERIA.md).
 

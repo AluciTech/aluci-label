@@ -1,10 +1,6 @@
-<center>
-
 # Aluci Label
 
 [![GitHub License](https://img.shields.io/github/license/AluciTech/aluci-label)](LICENSE)
-
-</center>
 
 **Aluci's label** certifies open-source projects that meet high standards in transparency, technical excellence, and human-centric design. Labeled projects are featured on the Aluci hub.
 

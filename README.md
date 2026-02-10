@@ -1,5 +1,7 @@
 # Aluci Label
 
+[![License][license-shield]][license]
+
 **Aluci's label** certifies open-source projects that meet high standards in transparency, technical excellence, and human-centric design. Labeled projects are featured on the Aluci hub.
 
 ## How to Apply

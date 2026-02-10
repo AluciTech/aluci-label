@@ -1,0 +1,188 @@
+name: Label Request
+description: Request the Aluci label for your open-source project
+title: "[Label Request]: "
+labels: ["label-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Aluci Label Request
+
+        Thank you for your interest in receiving the Aluci label! Please fill out all required fields so our review committee can evaluate your project against our [labeling criteria](../README.md).
+
+  - type: input
+    id: project-name
+    attributes:
+      label: Project Name
+      description: The name of the project you are submitting for labeling.
+      placeholder: e.g., My Awesome Project
+    validations:
+      required: true
+
+  - type: input
+    id: repository-url
+    attributes:
+      label: Repository URL
+      description: A link to the public repository of your project.
+      placeholder: https://github.com/username/repository
+    validations:
+      required: true
+
+  - type: textarea
+    id: project-description
+    attributes:
+      label: Project Description
+      description: A short description of your project, its purpose, and its target audience.
+      placeholder: Describe what your project does and why it exists.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "### 1. Open Source & Licensing"
+
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      description: Which OSI-approved license does your project use?
+      options:
+        - Apache-2.0 (recommended)
+        - MIT
+        - GPL-3.0
+        - LGPL-3.0
+        - BSD-2-Clause
+        - BSD-3-Clause
+        - MPL-2.0
+        - AGPL-3.0
+        - Other OSI-approved (specify below)
+    validations:
+      required: true
+
+  - type: input
+    id: license-other
+    attributes:
+      label: Other License (if applicable)
+      description: If you selected "Other OSI-approved", specify the exact license name here.
+      placeholder: e.g., ISC, Unlicense, etc.
+
+  - type: checkboxes
+    id: license-file
+    attributes:
+      label: License Visibility
+      options:
+        - label: A `LICENSE` file is present in the root directory of the repository.
+          required: true
+
+  - type: markdown
+    attributes:
+      value: "### 2. Technical Excellence & Justification"
+
+  - type: textarea
+    id: tech-stack
+    attributes:
+      label: Tech Stack & Justification
+      description: List the main languages, frameworks, and tools used, and briefly justify your choices.
+      placeholder: |
+        e.g.,
+        - Rust: chosen for memory safety and performance in a systems-level project.
+        - React: chosen for cross-platform compatibility (web + mobile via React Native).
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependency-management
+    attributes:
+      label: Dependency & Environment Management
+      description: What tools do you use for dependency and environment management?
+      placeholder: "e.g., Poetry (Python), Cargo (Rust), CMake (C/C++), Gradle (JVM), npm (JS), etc."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: technical-checklist
+    attributes:
+      label: Technical Checklist
+      description: Confirm the following about your project's technical foundation.
+      options:
+        - label: The project demonstrates a clear architecture and logical organization.
+          required: true
+        - label: The project provides a script or documented procedure for automated environment setup (e.g., `setup.sh`, `Makefile`, `docker-compose`).
+
+  - type: markdown
+    attributes:
+      value: "### 3. Documentation & Setup Standards"
+
+  - type: checkboxes
+    id: documentation-checklist
+    attributes:
+      label: Documentation Checklist
+      description: Confirm that your project meets these documentation standards.
+      options:
+        - label: The project includes a `README.md` with an Overview, Setup instructions, and Usage examples.
+          required: true
+        - label: All hardware and software requirements are explicitly listed.
+          required: true
+        - label: If the project is in early development, a prominent warning about its status is included.
+
+  - type: markdown
+    attributes:
+      value: "### 4. AI Usage Transparency"
+
+  - type: dropdown
+    id: ai-usage
+    attributes:
+      label: Was AI used during development?
+      description: Indicate whether any AI tools were used in the development of your project.
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: ai-checklist
+    attributes:
+      label: AI Transparency Checklist
+      description: If AI was used, confirm the following. Skip if no AI was used.
+      options:
+        - label: An `AI_USAGE.md` file based on the Aluci template is present in the repository.
+        - label: All AI-generated code has been reviewed, tested, and validated by a human contributor.
+
+  - type: markdown
+    attributes:
+      value: "### 5. Ethical & Human-Centric Design"
+
+  - type: textarea
+    id: ethics
+    attributes:
+      label: Privacy & Resource Efficiency
+      description: Briefly describe how your project handles user data privacy and what steps were taken to optimize resource consumption.
+      placeholder: |
+        e.g.,
+        - No user data is collected or stored.
+        - Uses a Small Language Model instead of a full LLM to minimize compute requirements.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "### Additional Information"
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Anything else you would like the review committee to know about your project?
+      placeholder: Links to documentation, demos, related projects, etc.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgement
+      description: Please confirm the following before submitting.
+      options:
+        - label: I have read and understood the [Aluci labeling criteria](../README.md).
+          required: true
+        - label: I understand my project will be reviewed by the Aluci labeling committee and that approval is not guaranteed.
+          required: true

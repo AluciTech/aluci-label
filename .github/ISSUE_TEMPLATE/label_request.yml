@@ -2,6 +2,7 @@ name: Label Request
 description: Request the Aluci label for your open-source project
 title: "[Label Request]: "
 labels: ["label-request"]
+assignees: ["Reviewers"]
 body:
   - type: markdown
     attributes:

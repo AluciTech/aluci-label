@@ -3,8 +3,6 @@
 # Aluci Label
 
 [![GitHub License](https://img.shields.io/github/license/AluciTech/aluci-label)](LICENSE)
-![Laabel Requests](https://img.shields.io/github/issues-search/AluciTech/aluci-label?query=label%3Alabel-request&label=Label%20Requests)
-
 
 </center>
 

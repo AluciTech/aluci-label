@@ -9,7 +9,7 @@
 Requesting the Aluci label for your project is straightforward:
 
 1. **Review the criteria**: Read our [Labeling Criteria](CRITERIA.md) to make sure your project is ready.
-2. **Prepare your project**: Ensure you have a proper license, documentation, and an [`AI_USAGE.md`](templates/ai_usage_template.md) file if AI tools were used during development.
+2. **Prepare your project**: Ensure you have a proper license, documentation, and an [`AI_USAGE.md`](https://github.com/AluciTech/aluci-open-source-template/blob/main/AI_USAGE.md) file if AI tools were used during development.
 3. **Submit a request**: Open a [Label Request](../../issues/new?template=label_request.yml) issue on this repository and fill out the form.
 4. **Await review**: The Aluci labeling committee will evaluate your project and provide feedback.
 
@@ -30,7 +30,6 @@ For the full details, see [**CRITERIA.md**](CRITERIA.md).
 
 ## Templates
 
-- [AI Usage Disclosure Template](templates/ai_usage_template.md): Required for any project that used AI during development.
 - [Label Review Template](templates/label_review_template.md): Used internally by reviewers to evaluate submissions.
 
 ## Conclusion

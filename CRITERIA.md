@@ -23,7 +23,7 @@ We value intentional engineering over "vibe coding" (unstructured, trial-and-err
 
 A project must be easy to audit and install for other developers:
 
-- **README tandard**: Every project must include a `README.md` with an Overview, Setup instructions, and Usage examples.
+- **README Standard**: Every project must include a `README.md` with an Overview, Setup instructions, and Usage examples.
 - **Status Transparency**: Projects in early development must include a prominent warning stating they are not yet ready for production use.
 - **Clear Requirements**: All hardware and software requirements must be explicitly listed.
 

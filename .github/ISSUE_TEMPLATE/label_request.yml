@@ -9,7 +9,7 @@ body:
       value: |
         ## Aluci Label Request
 
-        Thank you for your interest in receiving the Aluci label! Please fill out all required fields so our review committee can evaluate your project against our [labeling criteria](../README.md).
+        Thank you for your interest in receiving the Aluci label! Please fill out all required fields so our review committee can evaluate your project against our [labeling criteria](../CRITERIA.md).
 
   - type: input
     id: project-name
